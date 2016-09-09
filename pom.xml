@@ -50,30 +50,6 @@
 
 	<build>
 		<plugins>
-			<!-- running engine generator -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
-				<executions>
-					<execution>
-						<id>generate</id>
-						<phase>process-test-classes</phase>
-						<goals>
-							<goal>java</goal>
-						</goals>
-						<configuration>
-							<classpathScope>test</classpathScope>
-							<cleanupDaemonThreads>true</cleanupDaemonThreads>
-							<stopUnresponsiveDaemonThreads>true</stopUnresponsiveDaemonThreads>
-							<mainClass>org.activiti.GenerateProcessEngineState</mainClass>
-							<arguments>
-								<argument>${project.build.directory}</argument>
-							</arguments>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<!-- test config -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
