@@ -1,4 +1,4 @@
-package org.activiti.examples.activiti6;
+package org.activiti.examples.flowable6.designbydoing;
 
 import org.activiti.bpmn.model.*;
 import org.activiti.bpmn.model.Process;
@@ -26,7 +26,7 @@ import static org.junit.Assert.assertThat;
 /**
  * This example shows how to implement design by doing with adaptive process definitions
  */
-public class DesignByDoingTest {
+public class DesignByDoingPart1Test {
 
     @Rule
     public ActivitiRule activitiRule = new ActivitiRule();
